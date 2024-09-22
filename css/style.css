@@ -1,4 +1,32 @@
-html {
+.shop-title img {
+width: 150px;
+color: #46A358;
+margin: 31px auto 0;
+}
+
+.top-bottom {
+margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html {
 font-family: "Cera-pro-reg";
 }
 
@@ -79,7 +107,7 @@ display: inline-block;
 width: 84px;
 height: 1px;
 vertical-align: middle;
-}
+} */
 
 
 
