@@ -1,123 +1,91 @@
-.shop-title img {
-width: 150px;
-color: #46A358;
-margin: 31px auto 0;
-}
-
-.top-bottom {
-margin-top: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* html {
-font-family: "Cera-pro-reg";
-}
-
-
-* {
-padding: 0;
-margin: 0;
+.header {
+font-size: 0px;
 box-sizing: border-box;
+width:1200px;
+height: 53px;
+margin-top: 30px;
+
 }
 
+.logo {
+display: inline-block;
+width: 150px;
 
-.form-container {
-border: 1px solid black;
-width: 332px;
-margin: 30px auto;
-padding: 0 16px;
 }
 
-h1 {
-font-family: "Cera-pro-med";
-font-size: 20px; 
-text-align: center;
-margin: 52px 0 40px;
+.logo img {
+width: 100%;
+
 }
 
-.text-divider {
-width: 1px;
-height: 16px;
-vertical-align: middle;
+.navigat {
+display: inline-block;
+font-size: 16px;
+width: 351px;
+height: 45px;
+margin: 0px 370px 0px 229px;
 }
 
-.colored-text {
+.navigation__item-link {
+padding: 20px;
+
+}
+
+.login-btn {
+display: inline-block;
 color: #46A358;
 }
 
-.regular-text {
-font-size: 13px;
-margin-bottom: 14px;
+.login {
+  width: 100px;
+  height: 35px;
+  color: aliceblue;
+  background-color: #46A358;
+  border-radius: 5px;
+  border: none;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-width: 100%;
-padding: 12px 14px;
-margin-bottom: 16px;
-border-radius: 5px;
+.content-container {
+  width: 557px;
+  height: 450px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-bottom: 240px;
 }
 
-input[type="submit"], button {
-width: 100%;
-padding: 16px 0 14px;
-background-color: #46A358;
-border-radius: 5px;
-color: #fff;
-border: none;
-margin-bottom: 36px;
+.title {
+  font-size: 14px;
+  color: #3D3D3D;
+  margin-left: 43px;
+  box-sizing: border-box;
+
 }
 
-.soc-reg button {
-background-color: white;
-color: #727272;
-border: 1px solid #EAEAEA;
+.title1 {
+  font-size: 70px;
+  width: 530px;
+  height: 140px;
+  margin-left: 43px;
+  margin-top: 0px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
-.soc-reg button img {
-vertical-align: middle;
-}
-
-
-.line-label {
-text-align: center;
-margin-bottom: 28px;
-}
-
-.line-label span {
-display: inline-block;
-width: 84px;
-height: 1px;
-vertical-align: middle;
-} */
-
-
-
-/* header {
-  background-color: lightgray;
-  padding: 18px;
-  
-}
-input[type=submit] {
-  background-color: green;
-  width: 300px;
+.description {
+  max-width: 557px;
   height: 45px;
-} */
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 40px;
+  margin-top: 0px;
+}
+
+
+.flower {
+  display: inline-block;
+  width: 507px;
+  height: 450px;
+  margin-top: 40px;
+  margin-left: 123px;
+
+}
