@@ -1,39 +1,41 @@
+.green-text {
+  color: #46A358;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header {
-font-size: 0px;
-box-sizing: border-box;
-width:1200px;
-height: 53px;
-margin-top: 30px;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 53px;
+  margin: 30px auto 0;
 
 }
 
 .logo {
-display: inline-block;
-width: 150px;
-
-}
-
-.logo img {
-width: 100%;
+  display: inline-block;
+  width: 150px;
 
 }
 
 .navigat {
-display: inline-block;
-font-size: 16px;
-width: 351px;
-height: 45px;
-margin: 0px 370px 0px 229px;
+  display: inline-block;
+  font-size: 16px;
+  width: 351px;
+  height: 45px;
+  margin: 0 370px 0 220px;
 }
 
 .navigation__item-link {
-padding: 20px;
+  padding: 20px;
 
 }
 
 .login-btn {
-display: inline-block;
-color: #46A358;
+  display: inline-block;
+  color: #46A358;
 }
 
 .login {
@@ -47,45 +49,48 @@ color: #46A358;
 
 .content-container {
   width: 557px;
-  height: 450px;
   box-sizing: border-box;
   display: inline-block;
-  padding-bottom: 240px;
+  padding: 100px 0 0 43px;
+  vertical-align: top;
 }
 
 .title {
   font-size: 14px;
   color: #3D3D3D;
-  margin-left: 43px;
   box-sizing: border-box;
 
 }
 
 .title1 {
   font-size: 70px;
-  width: 530px;
-  height: 140px;
-  margin-left: 43px;
-  margin-top: 0px;
   display: inline-block;
   box-sizing: border-box;
 }
 
-.description {
-  max-width: 557px;
-  height: 45px;
+.shop-btn {
   display: inline-block;
-  box-sizing: border-box;
-  margin-left: 40px;
-  margin-top: 0px;
+  color: #46A358;
+  margin-top: 55px;
 }
 
+.shop {
+  width: 140px;
+  height: 35px;
+  color: aliceblue;
+  background-color: #46A358;
+  border-radius: 5px;
+  border: none;
+}
 
 .flower {
   display: inline-block;
   width: 507px;
   height: 450px;
-  margin-top: 40px;
-  margin-left: 123px;
+  margin-left: 132px;
+}
 
+.holder {
+  margin: 0 auto;
+  width: 1200px;
 }
