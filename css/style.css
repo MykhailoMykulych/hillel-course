@@ -1,14 +1,20 @@
+@import url(./fonts/CeraPro-Regular.ttf);
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "Dosis", sans-serif;
+  
 }
 
 .burger {
   width: 310px;
   height: 1244px;
-  background-color: lightyellow;
+  background-color: #FBFBFB;
+  ;
   float: left;
 }
 
@@ -46,6 +52,14 @@ span {
   padding-top: 70px;
   background-color: #FBFBFB;
 }
+
+.image9 {
+  padding-right: 33px;
+  padding-top: 70px;
+  background-color: #FBFBFB;
+}
+
+
 
 .images p:nth-child(3) {
 color: #46A358;
