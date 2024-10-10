@@ -1,6 +1,12 @@
-* {
-  font-family: "Dosis", sans-serif;
+@font-face {
+  font-family: CeraPro-Regular;
+  src: local('CeraPro'), url(fonts/CeraPro-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
+
+  html { 
+    font-family: 'CeraPro' }
 
 p {
   font-size: 14px;
