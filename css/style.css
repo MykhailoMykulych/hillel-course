@@ -109,15 +109,26 @@ body {
 }
 
 .buttons button {
-  background-color: #FFFFFF;
   border: none;
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
+.buttons button svg {
+  fill: black;
+}
+
 .images:hover .buttons button {
   opacity: 1;
+}
+
+.images:hover .buttons button:hover {
+  background-color: #c7a921;
+}
+
+.images:hover .buttons button:hover svg {
+  fill: red;
 }
 
 .discount {
