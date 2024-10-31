@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'CeraPro-Regular';
+  src: url('../fonts/CeraPro-Regular.woff') format('woff'), url('../fonts/CeraPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CeraPro-Medium';
+  src: url('../fonts/CeraPro-Medium.woff') format('woff'), url('../fonts/CeraPro-Medium.ttf') format('truetype'); /* Для старых браузеров */
+}
+
+@font-face {
+  font-family: 'CeraPro-Bold';
+  src: url('../fonts/CeraPro-Bold.woff') format('woff'), url('../fonts/CeraPro-Bold.ttf') format('truetype'); /* Для старых браузеров */
+}
+
+@font-face {
+  font-family: 'CeraPro-Black';
+  src: url('../fonts/CeraPro-Black.woff') format('woff'), url('../fonts/CeraPro-Black.ttf') format('truetype'); /* Для старых браузеров */
+}
+
+body {
+  font-family: 'CeraPro-Regular', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 12px;
+margin: 30px auto;
+box-sizing: border-box;
+border-bottom: 0.3px solid #46A35880;
+width: 100%;
+max-width: 1200px;
+font-family: "Encode Sans Expanded", serif;
+
+}
+
+.logo img {
+width: 100%;
+
+}
+
+.navigat {
+display: flex;
+align-items: center;
+gap: 30px;
+font-size: 16px;
+font-weight: 400;
+}
+
+.navigat a {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+.navigat__item {
+  position: relative;
+}
+/* navigat item hover dlya konkretnogo  classa (.navigation__item-link) */
+.navigat__item:hover .navigation__item-link {
+  font-weight: 700;
+}
+
+.inner-list {
+  padding-top: 12px;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  white-space: nowrap;
+  min-width: 188px;
+}
+
+.navigat__item:hover .inner-list {
+  visibility: visible;
+}
+
+.inner-list li {
+  background-color: #EDF6EE;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inner-list li:hover {
+  background-color: #1A712A;
+}
+
+.inner-list li:hover .inner-list_link {
+  color: #fff;
+}
+
+.inner-list li:hover .level2 {
+  visibility: visible;
+}
+
+.inner-list2 {
+  position: relative;
+}
+
+/* styles for level2 menu */
+.level2 {
+  visibility: hidden;
+  transition: visibility 0s, opacity 1s ease;
+  text-decoration: none;
+  position: absolute;
+  background-color: #EDF6EE;
+  left: 100%;
+  top: 95px;
+  transform: translateY(-50%);
+}
+
+/* hover effect for second menu */
+.level2 li:hover {
+  background-color: #1A712A; 
+}
+
+.level2 li:hover a {
+  color: #fff;
+}
+
+.navigation__item-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 3px solid transparent;
+}
+
+.navigation__item-link:hover {
+  transition: border-bottom-color .15s ease-in;
+  border-bottom-color: #46A358;
+}
+
+.login {
+  width: 100px;
+  height: 35px;
+  color: aliceblue;
+  background-color: #46A358;
+  border-radius: 6px;
+  border: none;
+}
+
+.login:hover {
+  color:#3D3D3D;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  background-color: #F5F5F580;
+  box-sizing: border-box;
+} 
+
+.title {
+  font-family: 'CeraPro-Medium';
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
+.title1 {
+  font-family: 'CeraPro-Black';
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 70px;
+  margin-top: 7px;
+}
+
+.title1 span {
+  color: #46A358;
+}
+
+.description {
+  margin-top: 5px;
+  font-family: 'CeraPro-Regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+}
+
+.shop-btn {
+  padding: 0 26px;
+  height: 40px;
+  color: aliceblue;
+  background-color: #46A358;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'CeraPro-Bold';
+  margin-top: 44px;
+  text-transform: uppercase;
+}
+
+.shop:hover {
+  color:#3D3D3D;
+  cursor: pointer;
+}
