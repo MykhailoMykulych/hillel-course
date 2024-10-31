@@ -24,6 +24,8 @@ body {
   font-family: 'CeraPro-Regular', sans-serif;
 }
 
+/* ======================STYLES FOR HEADER======================== */
+
 ul {
   list-style: none;
   padding: 0;
@@ -217,4 +219,148 @@ font-weight: 400;
 .shop:hover {
   color:#3D3D3D;
   cursor: pointer;
+}
+
+/* =============SECOND PART=========== */
+
+
+
+/* ---------------------------main container-------------------------------- */
+.main2 {
+  display: flex;
+  /* align-items: center; ------ moved content DOWN */
+  justify-content: space-between;
+  margin: 26px auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  background-color: #F5F5F580;
+  box-sizing: border-box;
+}
+
+.burger {
+  background-color: #FBFBFB;
+  color: #3D3D3D;
+}
+
+.banner img {
+display: flex;
+width: 100%;
+}
+
+.banner {
+  margin-top: 200px;
+  margin-left: -29px;
+}
+
+
+
+.navigation p {
+  margin: 5px 0;
+  padding-top: 20px;
+}
+
+.navigation p:hover {
+  color: #46A358;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 20x;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #3D3D3D;
+  padding-right: 20px;
+  
+}
+
+.header a:hover {
+  color: #46A358;
+}
+
+
+.header span {
+  display: flex;
+  justify-content: right;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images {
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  box-sizing: border-box; 
+  text-align: center;
+  position: relative; 
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.images p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #46A358;
+  text-align: left;
+
+}
+
+.images a {
+  margin: 5px 0;
+  display: block;
+  text-align: left;
+
+  
+}
+
+.buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buttons button {
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.buttons button svg {
+  fill: black;
+}
+
+.images:hover .buttons button {
+  opacity: 1;
+}
+
+.images:hover .buttons button:hover {
+  background-color: #c7a921;
+}
+
+.images:hover .buttons button:hover svg {
+  fill: red;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
 }
