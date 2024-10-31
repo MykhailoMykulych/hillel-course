@@ -149,15 +149,27 @@ font-weight: 400;
 }
 
 .login {
-  width: 100px;
-  height: 35px;
   color: aliceblue;
-  background-color: #46A358;
   border-radius: 6px;
+  background-color: #46A358;
   border: none;
+  font-family: 'CeraPro-Bold';
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 16px;
+  
 }
 
-.login:hover {
+.login-btn {
+  background-color: #46A358;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 17px 8px 41px;
+  border-radius: 6px;
+}
+/* -----------------------------LOOK AT THIS ------------------------- */
+.login-btn:hover .login {
   color:#3D3D3D;
   cursor: pointer;
 }
