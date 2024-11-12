@@ -2,22 +2,27 @@
 
 @font-face {
   font-family: 'CeraPro-Regular';
-  src: url('../fonts/CeraPro-Regular.woff') format('woff'), url('../fonts/CeraPro-Regular.ttf') format('truetype');
+  src: url('../fonts/CeraPro-Regular.woff') format('woff'), url('../fonts/CeraPro-Regular.ttf') format('truetype'); /*400*/
 }
 
 @font-face {
   font-family: 'CeraPro-Medium';
-  src: url('../fonts/CeraPro-Medium.woff') format('woff'), url('../fonts/CeraPro-Medium.ttf') format('truetype'); /* Для старых браузеров */
+  src: url('../fonts/CeraPro-Medium.woff') format('woff'), url('../fonts/CeraPro-Medium.ttf') format('truetype'); /*500*/ /* Для старых браузеров */
 }
 
 @font-face {
   font-family: 'CeraPro-Bold';
-  src: url('../fonts/CeraPro-Bold.woff') format('woff'), url('../fonts/CeraPro-Bold.ttf') format('truetype'); /* Для старых браузеров */
+  src: url('../fonts/CeraPro-Bold.woff') format('woff'), url('../fonts/CeraPro-Bold.ttf') format('truetype'); /*700*/ /* Для старых браузеров */
 }
 
 @font-face {
   font-family: 'CeraPro-Black';
-  src: url('../fonts/CeraPro-Black.woff') format('woff'), url('../fonts/CeraPro-Black.ttf') format('truetype'); /* Для старых браузеров */
+  src: url('../fonts/CeraPro-Black.woff') format('woff'), url('../fonts/CeraPro-Black.ttf') format('truetype'); /*900*/ /* Для старых браузеров */
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 body {
@@ -419,7 +424,7 @@ width: 100%;
 }
 
 .find {
- height: 40px;
+height: 40px;
   width: 140px;
   background-color: #46A358;
   border-radius: 5px;
@@ -468,46 +473,194 @@ text-align: center;
 }
 
 /* <!-- ==================FOOTER===================== --> */
-.footer {
-  display: flex;
-  max-width: 1200px;
-  margin: 30px auto;
-}
 
+/* -----------FIRST PART */
 .footer_line1 {
   display: flex;
-  gap: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 25px;
+  margin: 30px auto 0;
+  background-color: #FBFBFB;
+  font-family: 'CeraPro-Regular';
+}
+
+.card_container {
+  display: flex;
+  margin: 0;
 }
 
 .card {
-  width: 25%;
-  max-width: ;
+  padding-right: 30px;
 }
+
+.card_text {
+  padding-top: 9px;
+  line-height: 23px;
+  color: #727272;
+}
+
+
+
 .card_img_1 {
-  width: 77px; /* или конкретная ширина, например, 300px */
-  height: 95px; /* или минимальная высота */
   background-image: url(../img/backgrounds/Picture1.svg);
-  background-size: cover; /* Или auto, если нужно сохранить пропорции */
-  background-position: center;
+  width: 95px;
+  height: 95px;
   background-repeat: no-repeat;
 }
 .card_img_2 {
-  width: 77px; /* или конкретная ширина, например, 300px */
-  height: 95px; /* или минимальная высота */
   background-image: url(../img/backgrounds/Picture2.svg);
-  background-size: cover; /* Или auto, если нужно сохранить пропорции */
-  background-position: center;
+  width: 95px;
+  height: 95px;
   background-repeat: no-repeat;
 }
 .card_img_3 {
-  width: 77px; /* или конкретная ширина, например, 300px */
-  height: 95px; /* или минимальная высота */
   background-image: url(../img/backgrounds/Picture3.svg);
-  background-size: cover; /* Или auto, если нужно сохранить пропорции */
-  background-position: center;
+  width: 95px;
+  height: 95px;
   background-repeat: no-repeat;
+  
 }
 
 .join_offer {
-  width: 25%;
+padding-left: 30px;
 }
+
+.email_form {
+  display: flex;
+  align-items: stretch;
+  padding: 17px 0;
+}
+
+.email_form input {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+  padding: 0 10px;
+}
+
+.email_form button {
+  font-size: 18px;
+  padding: 12px 25px;
+  color: #FFFFFF;
+  background-color: #46A358;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+}
+
+/* <!-- SECOND PART --with logo and gradient --> */
+.footer_line2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 22px 19px;
+  background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #3D3D3D;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer__item-link {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+.footer__item-link:hover {
+  text-decoration: underline;
+}
+
+.contact_info{
+  width: 23%;
+}
+.footer_line2_text div {
+  width: 23%;
+}
+
+.bg_icon {
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.icon1 {
+  background-image: url(../img/icons/contact-icons/Location.svg);
+}
+.icon2 {
+  background-image: url(../img/icons/contact-icons/Message.svg);
+}
+.icon3 {
+  background-image: url(../img/icons/contact-icons/Calling.svg);
+}
+
+/* ----------Third part */
+.footer_line3 {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(251, 251, 251, 1);
+}
+
+.collumn_container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding: 33px 25px 29px 25px;
+}
+
+.social_media_icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Styles for COLLUMN TITLES --===================--------------------------------- */
+.collumn_container ul {              
+  font-family: 'CeraPro-Bold';
+  font-size: 18px;
+  color: rgba(61, 61, 61, 1);
+  padding-bottom: 10px;
+}
+
+.accept_list ul {
+  font-family: 'CeraPro-Bold';
+  font-size: 18px;
+  color: rgba(61, 61, 61, 1);
+}
+
+.collumn_container li {
+  color: rgba(61, 61, 61, 1); 
+  font-family: 'CeraPro-Regular';
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+/* <!-- -------------Social Media ICONS part --> */
+    .accept_list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 173px;
+    gap: 22px;
+    }
+
+    /* all rights reserved */
+    .right_reserved {
+      text-align: center;
+      color: rgba(61, 61, 61, 1);
+    }
