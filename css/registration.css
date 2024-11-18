@@ -52,11 +52,22 @@ html {
     width: 100%;
     padding: 16px 0 14px;
     background-color: #46A358;
+    font-size: 16px;
     border-radius: 5px;
     color: #fff;
     border: none;
     margin-bottom: 36px;
     }
+    
+    .buttons:hover {
+    cursor: pointer;
+    }
+
+    .reg_btn:hover {
+      color: #3D3D3D;
+      transition: 0.3s ease-in-out;
+    }
+
     
     .soc-reg button {
     background-color: white;
