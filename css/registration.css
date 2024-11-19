@@ -48,6 +48,55 @@ html {
     border-radius: 5px;
     }
     
+    /* --------------------CUSTOM CHECKBOX------------- */
+
+    .checkbox_form {
+      display: flex;
+      /* align-items: center; */
+      gap: 5px;
+    }
+    
+    .custom-checkbox {
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .custom-checkbox-icon {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+    
+    .custom-checkbox-icon:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 50%;
+      left: 50%;
+      background-color: #46A358;
+    /*   background-image: url(/assets/icons/icons-sprite/check.svg); */
+      transform: translate(-50%, -50%);
+      display: none;  
+    }
+    
+    .custom-checkbox input:checked ~.custom-checkbox-icon:before {
+      display: block;
+    }
+    
+    /* спрятали дефолтный чекбокс */
+    .custom-checkbox input {
+      display: none;
+    }
+
+    .checkbox_text {
+      font-size: 13px;
+    }
+    
     input[type="submit"], button {
     width: 100%;
     padding: 16px 0 14px;
